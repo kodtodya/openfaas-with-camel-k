@@ -1,18 +1,17 @@
 apiVersion: camel.apache.org/v1alpha1
-  kind: IntegrationContext
-  metadata:
+kind: IntegrationContext
+metadata:
     labels:
-      app: openfaas-with-camel-k
+      app: camel-k
       camel.apache.org/context.created.by.kind: Operator
       camel.apache.org/context.created.by.name: core
       camel.apache.org/context.type: platform
-    name: openfaas-with-camel-k
+    name: camel-k
     namespace: default
     resourceVersion: "38088"
     selfLink: /apis/camel.apache.org/v1alpha1/namespaces/default/integrationcontexts/groovy    
-  spec:
+spec:
     dependencies:
     - runtime:jvm
     - runtime:groovy
     - camel:core
-  
