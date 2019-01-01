@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: openfaas-with-camel-k
+  labels:
+    app: openfaas-with-camel-k
+spec:
+  containers:
+    - name: openfaas-with-camel-k
